@@ -36,7 +36,7 @@
           "weight_kg": 1250,
           "units_produced": 5,
           "msrp_usd": 320000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Pagani_Zonda_C12_RHD_Low.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Pagani_Zonda_C12_-_Flickr_-_exfordy.jpg",
           "image_urls": [],
           "description_en": "The original Zonda, debuted at the 1999 Geneva Motor Show. Carbon fibre monocoque chassis with a Mercedes-Benz M120 6.0L V12 producing 394 hp. Only 5 units were built before being replaced by the S variant.",
           "description_zh": "初代Zonda，1999年日内瓦车展首次亮相。碳纤维单体壳底盘搭载梅赛德斯-奔驰M120 6.0L V12发动机，输出394马力。在被S型取代之前仅生产了5台。"
@@ -57,7 +57,7 @@
           "weight_kg": 1280,
           "units_produced": 15,
           "msrp_usd": 400000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Silver_Pagani_Zonda_C12_DKEng.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Pagani_Zonda_S_%287188898896%29.jpg",
           "image_urls": [],
           "description_en": "Upgraded to a 7.0-litre AMG V12 producing 550 hp. Featured revised bodywork, larger brakes, and improved aerodynamics. The S established the Zonda as a serious competitor to the Ferrari Enzo and Porsche Carrera GT.",
           "description_zh": "升级为7.0升AMG V12发动机，输出550马力。改进了车身、加大了刹车并优化了空气动力学。S型确立了Zonda作为法拉利Enzo和保时捷Carrera GT强劲竞争对手的地位。"
@@ -78,7 +78,7 @@
           "weight_kg": 1280,
           "units_produced": 21,
           "msrp_usd": 450000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Pagani_Zonda_1.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Pagani_Zonda_S_7.3_%2810712604096%29.jpg",
           "image_urls": [],
           "description_en": "The engine was further enlarged to 7.3 litres, producing 555 hp. This became the definitive Zonda engine shared with subsequent variants. Featured subtle bodywork revisions and remained available in both coupe and roadster forms.",
           "description_zh": "发动机进一步扩大至7.3升，输出555马力。这成为后续变体共享的标志性Zonda发动机。车身进行了细微修改，同时提供硬顶和敞篷两种版本。"
@@ -99,7 +99,7 @@
           "weight_kg": 1230,
           "units_produced": 25,
           "msrp_usd": 741000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Pagani_Zonda_F.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Pagani_Zonda_F_%286939226060%29.jpg",
           "image_urls": [],
           "description_en": "Named in tribute to Juan Manuel Fangio. The F represents a major evolution with 602 hp from the 7.3L V12, revised carbon-titanium bodywork saving 50 kg, and dramatically improved aerodynamics generating 600 kg of downforce at 300 km/h. Set a 7:27.82 Nürburgring lap record for road cars.",
           "description_zh": "以胡安·曼努埃尔·方吉奥命名致敬。F型代表了重大进化：7.3L V12输出602马力，改进的碳钛车身减重50公斤，空气动力学显著提升，在300 km/h时产生600公斤下压力。创下了纽博格林公路车圈速纪录7:27.82。"
@@ -120,7 +120,7 @@
           "weight_kg": 1260,
           "units_produced": 25,
           "msrp_usd": 850000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/2006_Pagani_Zonda_F.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Pagani_Zonda_F_Roadster_%286193228537%29.jpg",
           "image_urls": [],
           "description_en": "Open-top version of the Zonda F. Same 602 hp V12, with structural reinforcements to compensate for the removed roof. Slightly heavier but widely considered one of the most beautiful open-top supercars ever made.",
           "description_zh": "Zonda F的敞篷版本。搭载同款602马力V12，通过结构加固弥补了去掉车顶的刚性损失。虽然略重，但被广泛认为是有史以来最美的敞篷超跑之一。"
@@ -141,7 +141,7 @@
           "weight_kg": 1210,
           "units_produced": 5,
           "msrp_usd": 1800000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/2009_Pagani_Zonda_Cinque.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Pagani_Zonda_Cinque_%2830666913164%29.jpg",
           "image_urls": [],
           "description_en": "Track-focused limited edition, only 5 coupes built. Features carbo-titanium body panels, a massive rear diffuser, and the most powerful naturally aspirated Zonda engine at 678 hp. Named 'Cinque' (Italian for five) for the production run.",
           "description_zh": "赛道取向的限量版，仅制造5台硬顶版。采用碳钛车身面板、巨大的后扩散器，以及最强大的自然吸气Zonda发动机（678马力）。'Cinque'意为意大利语'五'，对应产量。"
@@ -162,7 +162,7 @@
           "weight_kg": 1230,
           "units_produced": 5,
           "msrp_usd": 1900000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Pagani_Zonda_Cinque_-_Flickr_-_David_Villarreal_Fern%C3%A1ndez_%285%29.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Pagani_Zonda_Cinque_Roadster_%288012298730%29.jpg",
           "image_urls": [],
           "description_en": "Open-top Cinque, also limited to 5 units. Same 678 hp powertrain with revised aerodynamics for the roadster configuration. All units were pre-sold before the car was officially unveiled.",
           "description_zh": "Cinque的敞篷版，同样限量5台。搭载同款678马力动力系统，针对敞篷配置调整了空气动力学。所有车辆在正式发布前就已售罄。"
@@ -183,7 +183,7 @@
           "weight_kg": 1210,
           "units_produced": 3,
           "msrp_usd": 1700000,
-          "cover_image_url": null,
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Pagani_Zonda_Tricolore_%286004682117%29.jpg",
           "image_urls": [],
           "description_en": "Tribute to the Italian Air Force aerobatic team Frecce Tricolori. Only 3 units built, featuring Italian tricolor accents, Cinque-spec mechanicals, and unique blue-tinted carbon fibre body panels.",
           "description_zh": "向意大利空军特技飞行队Frecce Tricolori致敬。仅制造3台，采用意大利三色旗装饰、Cinque规格的机械结构以及独特的蓝色碳纤维车身面板。"
@@ -204,7 +204,7 @@
           "weight_kg": 1070,
           "units_produced": 15,
           "msrp_usd": 2500000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Pagani_Zonda_R_-_Flickr_-_The_Car_Spy.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Pagani_Zonda_R_%2812541371753%29.jpg",
           "image_urls": [],
           "description_en": "Track-only version using a Mercedes-Benz CLK GTR-derived 6.0L V12 producing 750 hp. Weighs only 1,070 kg thanks to full carbon-titanium construction. Set a Nürburgring lap time of 6:47 — faster than most LMP cars of the era. Not road legal.",
           "description_zh": "仅限赛道的版本，采用源自梅赛德斯-奔驰CLK GTR的6.0L V12发动机，输出750马力。得益于全碳钛结构，仅重1,070公斤。纽博格林圈速6:47——比当时大多数LMP赛车还快。不可上路。"
@@ -225,7 +225,7 @@
           "weight_kg": 1070,
           "units_produced": 5,
           "msrp_usd": 2900000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Zonda_R_Revoluci%C3%B3n.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Pagani_Zonda_Revoluci%C3%B3n_%2815853432626%29.jpg",
           "image_urls": [],
           "description_en": "The ultimate track-only Zonda. 800 hp from the evolved 6.0L V12, sequential 6-speed gearbox, DRS system, and full telemetry suite. Only 5 built. Features a massive rear wing and aggressive aerodynamic package generating over 1,500 kg of downforce.",
           "description_zh": "终极赛道版Zonda。进化版6.0L V12输出800马力，搭载序列式6速变速箱、DRS系统和完整遥测套件。仅制造5台。配备巨大尾翼和激进的空气动力学套件，产生超过1,500公斤下压力。"
@@ -246,7 +246,7 @@
           "weight_kg": 1250,
           "units_produced": 3,
           "msrp_usd": 17500000,
-          "cover_image_url": null,
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Pagani_Zonda_HP_Barchetta_%2849063686938%29.jpg",
           "image_urls": [],
           "description_en": "One of the most expensive cars ever made at $17.5M. Built as Horacio Pagani's personal car, only 3 units exist. Features a unique barchetta (open-top without windshield) design, chopped windscreen, and the most powerful road-going Zonda engine at 789 hp. One unit was owned by Horacio himself.",
           "description_zh": "有史以来最昂贵的汽车之一，售价1,750万美元。作为霍拉西奥·帕加尼的私人座驾打造，仅存3台。采用独特的barchetta（无挡风玻璃敞篷）设计、削短的挡风屏，以及最强大的公路版Zonda发动机（789马力）。其中一台由霍拉西奥本人拥有。"
@@ -278,7 +278,7 @@
           "weight_kg": 1350,
           "units_produced": 100,
           "msrp_usd": 1400000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Pagani_Huayra_2.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Pagani_Huayra_%2816457011655%29.jpg",
           "image_urls": [],
           "description_en": "Pagani's second model, featuring a bespoke Mercedes-AMG M158 twin-turbo 6.0L V12 producing 730 hp and 1,000 Nm. Introduced active aerodynamics with four computer-controlled flaps, gull-wing doors, and a carbo-titanium monocoque. Production limited to 100 units.",
           "description_zh": "帕加尼的第二款车型，搭载定制的梅赛德斯-AMG M158双涡轮6.0L V12发动机，输出730马力和1,000牛·米。引入了四个电脑控制翼片的主动空气动力学系统、鸥翼门和碳钛单体壳。限量生产100台。"
@@ -299,7 +299,7 @@
           "weight_kg": 1218,
           "units_produced": 20,
           "msrp_usd": 2800000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/2016-03-01_Geneva_Motor_Show_0812.JPG",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Pagani_Huayra_BC_%2830666869694%29.jpg",
           "image_urls": [],
           "description_en": "Named after Benny Caiola, Pagani's first customer. Track-focused evolution with 789 hp, reduced weight to 1,218 kg, new Xtrac 7-speed automated manual gearbox, and revised active aero. Features a functional front splitter and massive rear diffuser.",
           "description_zh": "以帕加尼的第一位客户本尼·卡奥拉命名。赛道取向进化版，输出789马力，减重至1,218公斤，搭载全新Xtrac 7速自动手动变速箱和改进的主动空气动力学。配备功能性前分流器和巨大的后扩散器。"
@@ -320,7 +320,7 @@
           "weight_kg": 1280,
           "units_produced": 100,
           "msrp_usd": 2400000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/2021_Pagani_Huayra_Roadster.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Pagani_Huayra_Roadster_%2838571652696%29.jpg",
           "image_urls": [],
           "description_en": "Open-top Huayra that is lighter than the coupe thanks to an evolved carbo-titanium tub. 764 hp, removable carbon fibre roof panels, and a unique rear deck design. Despite being a convertible, it weighs 70 kg less than the coupe.",
           "description_zh": "敞篷版Huayra，得益于进化的碳钛底盘，比硬顶版更轻。764马力，可拆卸碳纤维车顶面板，独特的后甲板设计。尽管是敞篷车，却比硬顶版轻70公斤。"
@@ -341,7 +341,7 @@
           "weight_kg": 1250,
           "units_produced": 40,
           "msrp_usd": 3500000,
-          "cover_image_url": null,
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Pagani_Huayra_Roadster_BC_%2849088189888%29.jpg",
           "image_urls": [],
           "description_en": "The most extreme open-top Huayra. 800 hp, only 1,250 kg, with the BC's aggressive aerodynamic package adapted for the roadster body. All 40 units sold out before announcement. Features a new quad-exhaust system.",
           "description_zh": "最极端的敞篷版Huayra。800马力，仅重1,250公斤，BC的激进空气动力学套件适配敞篷车身。40台全部在发布前售罄。配备全新四出排气系统。"
@@ -362,7 +362,7 @@
           "weight_kg": 1050,
           "units_produced": 30,
           "msrp_usd": 3100000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Pagani_Huayra_R_%2840249%29.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Pagani_Huayra_R_%2851693946756%29.jpg",
           "image_urls": [],
           "description_en": "Track-only Huayra with a bespoke naturally aspirated 6.0L V12 developed by HWA AG (not AMG), revving to 9,000 RPM and producing 850 hp. Returns to natural aspiration for pure driving experience. Sequential 6-speed gearbox, 1,050 kg dry weight. Not road legal.",
           "description_zh": "仅限赛道的Huayra，搭载由HWA AG（非AMG）开发的定制6.0L自然吸气V12发动机，转速可达9,000 RPM，输出850马力。回归自然吸气以获得纯粹的驾驶体验。序列式6速变速箱，整备质量1,050公斤。不可上路。"

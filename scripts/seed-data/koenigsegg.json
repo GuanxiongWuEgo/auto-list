@@ -36,7 +36,7 @@
           "weight_kg": 1180,
           "units_produced": 6,
           "msrp_usd": 620000,
-          "cover_image_url": null,
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Koenigsegg_CC8S_%2852164513373%29.jpg",
           "image_urls": [],
           "description_en": "Koenigsegg's first production car. 655 hp from a supercharged 4.7L Ford V8, carbon fiber monocoque, and a dry weight of just 1,180 kg. Only 6 were built. Established the brand's formula: maximum power-to-weight ratio.",
           "description_zh": "柯尼塞格的首款量产车。机械增压4.7L福特V8输出655马力，碳纤维单体壳，干重仅1,180公斤。仅生产6台。确立了品牌公式：最大功重比。"
@@ -57,7 +57,7 @@
           "weight_kg": 1180,
           "units_produced": 14,
           "msrp_usd": 650000,
-          "cover_image_url": null,
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Koenigsegg_CCR.jpg",
           "image_urls": [],
           "description_en": "The CCR pushed power to 806 hp and briefly held the Guinness World Record for fastest production car at 387.87 km/h in 2005, beating the McLaren F1's long-standing record. Only 14 built.",
           "description_zh": "CCR将功率提升至806马力，2005年以387.87 km/h短暂保持最快量产车吉尼斯世界纪录，打破了迈凯伦F1的长期纪录。仅生产14台。"
@@ -78,7 +78,7 @@
           "weight_kg": 1180,
           "units_produced": 29,
           "msrp_usd": 700000,
-          "cover_image_url": null,
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Koenigsegg_CCX.jpg",
           "image_urls": [],
           "description_en": "The CCX was designed to meet US road regulations while maintaining performance. Featured a new twin-supercharged engine running on E85 bioethanol (CCXR variant: 1,018 hp). Made famous by Jeremy Clarkson's near-crash on Top Gear.",
           "description_zh": "CCX专为满足美国道路法规而设计，同时保持性能。采用新型双机械增压发动机，可使用E85生物乙醇（CCXR版：1,018马力）。因杰里米·克拉克森在Top Gear的险些事故而广为人知。"
@@ -110,7 +110,7 @@
           "weight_kg": 1435,
           "units_produced": 18,
           "msrp_usd": 1600000,
-          "cover_image_url": null,
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Agera_%287464076462%29.jpg",
           "image_urls": [],
           "description_en": "The original Agera introduced Koenigsegg's own 5.0L twin-turbo V8 making 910 hp. Featuring a hollow carbon fiber one-piece monocoque, Triplex rear suspension, and the world's first production car with carbon fiber wheels.",
           "description_zh": "初代Agera引入了柯尼塞格自主研发的5.0L双涡轮V8，输出910马力。配备空心碳纤维一体式单体壳、三倍联动后悬架，以及世界首款配备碳纤维车轮的量产车。"
@@ -131,7 +131,7 @@
           "weight_kg": 1435,
           "units_produced": 10,
           "msrp_usd": 1600000,
-          "cover_image_url": null,
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/2012-03-07_Motorshow_Geneva_4598.JPG",
           "image_urls": [],
           "description_en": "The Agera R increased power to 1,140 hp on E85 biofuel. Set multiple world records including 0-300-0 km/h in 21.19 seconds. The R specification could accelerate from 0-400 km/h and back to 0 in under 30 seconds.",
           "description_zh": "Agera R在E85生物燃料下功率提升至1,140马力。创下多项世界纪录，包括0-300-0 km/h仅21.19秒。R规格车型可在30秒内完成0-400 km/h再制动至停止。"
@@ -152,10 +152,31 @@
           "weight_kg": 1395,
           "units_produced": 25,
           "msrp_usd": 2000000,
-          "cover_image_url": null,
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/2015-03-03_Geneva_Motor_Show_3297.JPG",
           "image_urls": [],
           "description_en": "The Agera RS set a two-way average speed record of 447.19 km/h on a closed Nevada highway in 2017, beating the Bugatti Chiron's attempt. Total of 5 Guinness World Records. Only 25 built. Features active aerodynamics and the most advanced version of the twin-turbo V8.",
           "description_zh": "Agera RS于2017年在封闭的内华达公路上创下447.19 km/h的双向平均速度纪录，超越了布加迪奇龙的尝试。共创下5项吉尼斯世界纪录。仅生产25台。配备主动空气动力学系统和双涡轮V8的最先进版本。"
+        },
+        {
+          "slug": "koenigsegg-one1-2014",
+          "name_en": "One:1",
+          "name_zh": "One:1",
+          "year": 2014,
+          "engine_layout": "mid-rear twin-turbo V8",
+          "displacement_cc": 4973,
+          "cylinders": 8,
+          "forced_induction": "twin-turbo",
+          "max_power_hp": 1360,
+          "max_torque_nm": 1371,
+          "zero_to_100_s": 2.8,
+          "top_speed_kmh": 440,
+          "weight_kg": 1360,
+          "units_produced": 6,
+          "msrp_usd": 2850000,
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Koenigsegg_%28Agera%29_One-1_at_Goodwood_2014_008.jpg",
+          "image_urls": [],
+          "description_en": "The world's first 'megacar' — named for its 1:1 power-to-weight ratio (1,360 hp / 1,360 kg). Twin-turbo 5.0L V8 producing 1 megawatt of power. Set a 0-300-0 km/h record of 17.95 seconds. Only 6 production units plus 1 prototype. First production car with over 1 megawatt.",
+          "description_zh": "世界首台'百万瓦超跑'——以其1:1的功重比命名（1,360马力/1,360公斤）。双涡轮5.0L V8输出1兆瓦功率。创下0-300-0 km/h仅17.95秒的纪录。仅6台量产版加1台原型车。首款功率超过1兆瓦的量产车。"
         }
       ]
     },
@@ -184,7 +205,7 @@
           "weight_kg": 1420,
           "units_produced": 125,
           "msrp_usd": 3000000,
-          "cover_image_url": null,
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/2023_Koenigsegg_Jesko_Attack_%2877763%29.jpg",
           "image_urls": [],
           "description_en": "The track-focused Jesko produces 1,600 hp on E85 (1,280 hp on petrol). Features a revolutionary 9-speed Light Speed Transmission (LST) with virtually instant gear changes, active aerodynamics generating 800 kg downforce, and a new 5.0L twin-turbo V8.",
           "description_zh": "赛道取向的杰斯科在E85燃料下输出1,600马力（汽油下1,280马力）。配备革命性9速光速变速箱（LST），换挡几乎即时，主动空气动力学产生800公斤下压力，以及全新5.0L双涡轮V8。"
@@ -205,7 +226,7 @@
           "weight_kg": 1420,
           "units_produced": 125,
           "msrp_usd": 3400000,
-          "cover_image_url": null,
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/2023_Koenigsegg_Jesko_Absolut.jpg",
           "image_urls": [],
           "description_en": "The Jesko Absolut is designed purely for maximum top speed, with a claimed 531 km/h (330 mph). Compared to the regular Jesko, it features reduced aerodynamic drag rather than maximum downforce — a completely different aerodynamic philosophy focused on penetrating air resistance.",
           "description_zh": "杰斯科绝对版专为极限极速设计，官方宣称531 km/h（330英里/小时）。与标准杰斯科相比，采用降低空气阻力而非最大下压力的设计——完全不同的空气动力学哲学，专注于穿透空气阻力。"
@@ -237,10 +258,74 @@
           "weight_kg": 1628,
           "units_produced": 80,
           "msrp_usd": 1900000,
-          "cover_image_url": null,
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/2015-03-03_Geneva_Motor_Show_3294.JPG",
           "image_urls": [],
           "description_en": "The Regera combines a 1,100 hp twin-turbo V8 with three electric motors for 1,500 hp total and 2,000 Nm of torque. No traditional gearbox — Koenigsegg Direct Drive connects engine directly to wheels via a fluid coupling. Set a 0-400 km/h record of 31.49 seconds.",
           "description_zh": "雷杰拉将1,100马力双涡轮V8与三台电动机结合，综合输出1,500马力和2,000牛·米扭矩。没有传统变速箱——柯尼塞格直驱系统通过液力耦合器将发动机直接连接车轮。创下0-400 km/h仅31.49秒的纪录。"
+        }
+      ]
+    },
+    {
+      "slug": "gemera",
+      "name_en": "Gemera",
+      "name_zh": "Gemera 吉梅拉",
+      "production_start": 2023,
+      "production_end": null,
+      "description_en": "The Gemera is Koenigsegg's first four-seater and the world's first Mega-GT. It combines a 2.0-litre three-cylinder twin-turbo engine (the most powerful three-cylinder ever) with three electric motors for 1,700 hp. Four real seats, luggage space, and hypercar performance.",
+      "description_zh": "Gemera是柯尼塞格首款四座车，也是世界首款Mega-GT。将2.0升三缸双涡轮发动机（有史以来最强三缸机）与三台电动机结合，输出1,700马力。四个真实座椅、行李空间和超跑性能。",
+      "variants": [
+        {
+          "slug": "koenigsegg-gemera-2020",
+          "name_en": "Gemera",
+          "name_zh": "Gemera",
+          "year": 2020,
+          "engine_layout": "mid-rear 3-cyl twin-turbo + 3 electric motors",
+          "displacement_cc": 1988,
+          "cylinders": 3,
+          "forced_induction": "twin-turbo + hybrid",
+          "max_power_hp": 1700,
+          "max_torque_nm": 3500,
+          "zero_to_100_s": 1.9,
+          "top_speed_kmh": 400,
+          "weight_kg": 1850,
+          "units_produced": 300,
+          "msrp_usd": 1700000,
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Koenigsegg_Gemera_%2850817931577%29.jpg",
+          "image_urls": [],
+          "description_en": "World's first Mega-GT. The Tiny Friendly Giant (TFG) 2.0L three-cylinder produces 600 hp — the most powerful 3-cylinder engine ever built. Three electric motors add 1,100 hp for 1,700 hp total and 3,500 Nm. Four seats, two doors with Koenigsegg's Autosilla system. 300 planned.",
+          "description_zh": "世界首款Mega-GT。名为'小友好巨人'（TFG）的2.0L三缸发动机输出600马力——有史以来最强大的三缸发动机。三台电动机增加1,100马力，综合1,700马力和3,500牛·米。四座两门，配备柯尼塞格Autosilla系统。计划生产300台。"
+        }
+      ]
+    },
+    {
+      "slug": "cc850",
+      "name_en": "CC850",
+      "name_zh": "CC850",
+      "production_start": 2022,
+      "production_end": null,
+      "description_en": "The CC850 celebrates 20 years of Koenigsegg and the 50th birthday of Christian von Koenigsegg. It's a modern reinterpretation of the CC8S with a unique Engage Shift System (ESS) that can function as both a 6-speed manual and a 9-speed automatic.",
+      "description_zh": "CC850庆祝柯尼塞格成立20周年和克里斯蒂安·冯·柯尼塞格50岁生日。它是CC8S的现代重新诠释，配备独特的Engage换挡系统（ESS），可同时作为6速手动和9速自动变速箱使用。",
+      "variants": [
+        {
+          "slug": "koenigsegg-cc850-2022",
+          "name_en": "CC850",
+          "name_zh": "CC850",
+          "year": 2022,
+          "engine_layout": "mid-rear twin-turbo V8",
+          "displacement_cc": 4973,
+          "cylinders": 8,
+          "forced_induction": "twin-turbo",
+          "max_power_hp": 1385,
+          "max_torque_nm": 1385,
+          "zero_to_100_s": 2.6,
+          "top_speed_kmh": 450,
+          "weight_kg": 1385,
+          "units_produced": 70,
+          "msrp_usd": 3650000,
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Koenigsegg_CC850_%2852575923226%29.jpg",
+          "image_urls": [],
+          "description_en": "Celebrates 20 years of Koenigsegg with a retro-inspired design echoing the CC8S. The revolutionary Engage Shift System (ESS) can work as a 6-speed manual with a gated shifter or a 9-speed automatic — switching modes seamlessly. 1,385 hp, targa body. 50 units initially, expanded to 70.",
+          "description_zh": "以复古设计致敬CC8S，庆祝柯尼塞格成立20周年。革命性的Engage换挡系统（ESS）可在带挡位槽的6速手动和9速自动之间无缝切换。1,385马力，Targa车身。最初50台，后扩展至70台。"
         }
       ]
     }
