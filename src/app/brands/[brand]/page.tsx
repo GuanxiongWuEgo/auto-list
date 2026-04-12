@@ -63,9 +63,17 @@ export default async function BrandPage({ params }: Props) {
     <div className="mx-auto max-w-7xl px-6 py-12">
       {/* Brand header */}
       <div className="flex items-center gap-4">
-        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-card text-2xl font-bold text-accent">
-          {brand.name_en.charAt(0)}
-        </div>
+        {brand.logo_url ? (
+          <img
+            src={brand.logo_url}
+            alt={`${brand.name_en} logo`}
+            className="h-16 w-16 rounded-full object-contain bg-card p-2"
+          />
+        ) : (
+          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-card text-2xl font-bold text-accent">
+            {brand.name_en.charAt(0)}
+          </div>
+        )}
         <div>
           <h1 className="text-4xl font-bold tracking-tight">{brand.name_en}</h1>
           {brand.name_zh && <p className="text-lg text-muted">{brand.name_zh}</p>}

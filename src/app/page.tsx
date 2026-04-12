@@ -6,7 +6,7 @@ export default async function HomePage() {
 
   const { data: brands } = await supabase
     .from("brands")
-    .select("slug, name_en, name_zh, country, cover_url")
+    .select("slug, name_en, name_zh, country, cover_url, logo_url")
     .order("name_en");
 
   const { data: featured } = await supabase
@@ -107,9 +107,17 @@ export default async function HomePage() {
                 href={`/brands/${brand.slug}`}
                 className="group flex items-center gap-4 rounded-xl border border-border bg-card p-5 transition-colors hover:border-accent/50"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-background text-lg font-bold text-accent">
-                  {brand.name_en.charAt(0)}
-                </div>
+                {brand.logo_url ? (
+                  <img
+                    src={brand.logo_url}
+                    alt={`${brand.name_en} logo`}
+                    className="h-12 w-12 rounded-full object-contain bg-background p-1"
+                  />
+                ) : (
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-background text-lg font-bold text-accent">
+                    {brand.name_en.charAt(0)}
+                  </div>
+                )}
                 <div>
                   <h3 className="font-semibold group-hover:text-accent transition-colors">
                     {brand.name_en}
