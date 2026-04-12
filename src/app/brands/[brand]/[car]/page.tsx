@@ -23,7 +23,7 @@ const specRows: { key: string; label: string; labelZh: string; suffix?: string; 
 ];
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const supabase = createClient();
+  const supabase = await createClient();
   const { data: car } = await supabase
     .from("car_variants")
     .select("name_en, name_zh, max_power_hp, year")
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function CarDetailPage({ params }: Props) {
-  const supabase = createClient();
+  const supabase = await createClient();
 
   const { data: car } = await supabase
     .from("car_variants")

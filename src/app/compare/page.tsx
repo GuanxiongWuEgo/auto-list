@@ -52,7 +52,9 @@ function formatValue(
   return `${prefix ?? ""}${value}${suffix ?? ""}`;
 }
 
-export default function ComparePage() {
+const supabase = createClient();
+
+function CompareContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const slugA = searchParams.get("a");
@@ -64,8 +66,6 @@ export default function ComparePage() {
   const [allCars, setAllCars] = useState<{ slug: string; name_en: string; year: number | null }[]>([]);
   const [errorA, setErrorA] = useState(false);
   const [errorB, setErrorB] = useState(false);
-
-  const supabase = createClient();
 
   useEffect(() => {
     supabase
@@ -220,5 +220,13 @@ export default function ComparePage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function ComparePage() {
+  return (
+    <Suspense>
+      <CompareContent />
+    </Suspense>
   );
 }

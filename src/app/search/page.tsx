@@ -14,12 +14,12 @@ interface SearchResult {
   cover_image_url: string | null;
 }
 
+const supabase = createClient();
+
 export default function SearchPage() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
   const [searched, setSearched] = useState(false);
-
-  const supabase = createClient();
 
   async function handleSearch(q: string) {
     setQuery(q);

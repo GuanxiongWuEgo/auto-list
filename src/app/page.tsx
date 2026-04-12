@@ -2,7 +2,7 @@ import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 
 export default async function HomePage() {
-  const supabase = createClient();
+  const supabase = await createClient();
 
   const { data: brands } = await supabase
     .from("brands")
