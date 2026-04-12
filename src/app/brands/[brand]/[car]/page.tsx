@@ -4,7 +4,7 @@ import { createClient } from "@/lib/supabase/server";
 import type { Metadata } from "next";
 
 interface Props {
-  params: { brand: string; car: string };
+  params: Promise<{ brand: string; car: string }>;
 }
 
 const specRows: { key: string; label: string; labelZh: string; suffix?: string; prefix?: string }[] = [
@@ -23,11 +23,12 @@ const specRows: { key: string; label: string; labelZh: string; suffix?: string; 
 ];
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { car: carSlug } = await params;
   const supabase = await createClient();
   const { data: car } = await supabase
     .from("car_variants")
     .select("name_en, name_zh, max_power_hp, year")
-    .eq("slug", params.car)
+    .eq("slug", carSlug)
     .single();
 
   if (!car) return { title: "Car Not Found" };
@@ -38,12 +39,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function CarDetailPage({ params }: Props) {
+  const { car: carSlug } = await params;
   const supabase = await createClient();
 
   const { data: car } = await supabase
     .from("car_variants")
     .select("*, series:car_series(slug, name_en, name_zh, brand:brands(slug, name_en, name_zh))")
-    .eq("slug", params.car)
+    .eq("slug", carSlug)
     .single();
 
   if (!car) notFound();

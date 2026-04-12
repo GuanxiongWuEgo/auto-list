@@ -4,15 +4,16 @@ import { createClient } from "@/lib/supabase/server";
 import type { Metadata } from "next";
 
 interface Props {
-  params: { brand: string };
+  params: Promise<{ brand: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { brand: brandSlug } = await params;
   const supabase = await createClient();
   const { data: brand } = await supabase
     .from("brands")
     .select("name_en, name_zh")
-    .eq("slug", params.brand)
+    .eq("slug", brandSlug)
     .single();
 
   if (!brand) return { title: "Brand Not Found" };
@@ -22,12 +23,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function BrandPage({ params }: Props) {
+  const { brand: brandSlug } = await params;
   const supabase = await createClient();
 
   const { data: brand } = await supabase
     .from("brands")
     .select("*")
-    .eq("slug", params.brand)
+    .eq("slug", brandSlug)
     .single();
 
   if (!brand) notFound();
@@ -107,7 +109,7 @@ export default async function BrandPage({ params }: Props) {
                     {sv.map((car) => (
                       <Link
                         key={car.slug}
-                        href={`/brands/${params.brand}/${car.slug}`}
+                        href={`/brands/${brandSlug}/${car.slug}`}
                         className="group rounded-xl border border-border bg-card p-5 transition-colors hover:border-accent/50"
                       >
                         {car.cover_image_url ? (
