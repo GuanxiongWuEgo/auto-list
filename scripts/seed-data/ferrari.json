@@ -36,7 +36,7 @@
           "weight_kg": 1160,
           "units_produced": 272,
           "msrp_usd": 83400,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Ferrari_288_GTO_%281%29.JPG",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/McLaren_F1_LM_%26_Ferrari_288_GTO.jpg",
           "image_urls": [],
           "description_en": "Ferrari's Group B homologation special. The 2.8-litre twin-turbocharged V8, derived from the 308 GTB, produces 400 hp. Longitudinally mounted engine (unlike the transverse 308) with a carbon-Kevlar body saving significant weight. Only 272 built against the 200 required for homologation. The direct ancestor of the F40.",
           "description_zh": "法拉利B组赛车均质化特别版。源自308 GTB的2.8升双涡轮增压V8输出400马力。纵向安装发动机（不同于横置的308），碳纤维-Kevlar车身大幅减重。仅在均质化所需200台基础上生产了272台。F40的直接前身。"
@@ -68,7 +68,7 @@
           "weight_kg": 1100,
           "units_produced": 1311,
           "msrp_usd": 400000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Ferrari_F40.JPG",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Classic_Gallery%2C_GIMS_2024%2C_Le_Grand-Saconnex_%28GIMS0179%29.jpg/960px-Classic_Gallery%2C_GIMS_2024%2C_Le_Grand-Saconnex_%28GIMS0179%29.jpg",
           "image_urls": [],
           "description_en": "The definitive F40 production variant. Powered by a 2.9-litre twin-turbocharged V8 producing 478 hp, housed in a lightweight tubular steel chassis with Kevlar, carbon fibre, and aluminium bodywork. No carpets, no radio, no door handles inside — just a fire extinguisher and a raw driving experience. The last car personally signed off by Enzo Ferrari before his death in 1988.",
           "description_zh": "标准量产版F40。搭载2.9升双涡轮增压V8发动机，输出478马力，装配在由Kevlar、碳纤维和铝合金车身构成的轻量化管状钢架底盘上。没有地毯、没有收音机、没有内部门把手——只有一个灭火器和原始的驾驶体验。这是恩佐·法拉利于1988年去世前亲自签发的最后一款车。"
@@ -89,7 +89,7 @@
           "weight_kg": 1050,
           "units_produced": 19,
           "msrp_usd": null,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Goodwood2007-025_Ferrari_F40_LM_%281995%29.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Classic_Gallery%2C_GIMS_2024%2C_Le_Grand-Saconnex_%28GIMS0179%29.jpg/960px-Classic_Gallery%2C_GIMS_2024%2C_Le_Grand-Saconnex_%28GIMS0179%29.jpg",
           "image_urls": [],
           "description_en": "Le Mans racing variant of the F40, developed for GT endurance racing. Engine boosted to 720 hp with larger turbos and revised internals. Features a full roll cage, racing harness, dry-sump lubrication, and stripped interior. Competed at Le Mans and IMSA events. Only 19 built, converted from standard F40s.",
           "description_zh": "F40的勒芒赛车版，专为GT耐力赛开发。发动机通过更大涡轮和修改内部结构提升至720马力。配备全套滚笼、赛车安全带、干式油底壳润滑系统和纯粹的赛车内饰。曾参加勒芒和IMSA赛事。仅制造19台，均由标准F40改装而来。"
@@ -110,7 +110,7 @@
           "weight_kg": 1080,
           "units_produced": 8,
           "msrp_usd": null,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Ferrari_F40_Competizione_Automobiles_museum_torino.JPG",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Classic_Gallery%2C_GIMS_2024%2C_Le_Grand-Saconnex_%28GIMS0179%29.jpg/960px-Classic_Gallery%2C_GIMS_2024%2C_Le_Grand-Saconnex_%28GIMS0179%29.jpg",
           "image_urls": [],
           "description_en": "Street-legal competition version of the F40 with enhanced performance over the standard car. Tuned to 600 hp with improved aerodynamics, stiffer suspension, and enhanced braking. Bridged the gap between the road car and the full LM specification. Extremely rare with only 8 examples built.",
           "description_zh": "F40的可上路竞赛版，性能高于标准版。调校至600马力，拥有改进的空气动力学、更硬的悬架和增强的制动系统。填补了公路版和完整LM规格之间的空白。极为罕见，仅制造8台。"
@@ -142,7 +142,7 @@
           "weight_kg": 1230,
           "units_produced": 349,
           "msrp_usd": 510000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Ferrari_F50.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/A_Ferrari_F50.jpg/960px-A_Ferrari_F50.jpg",
           "image_urls": [],
           "description_en": "Ferrari's 50th anniversary flagship. The 4.7-litre naturally aspirated V12 engine is a direct evolution of the Ferrari 641 F1 unit, revving to 8,500 RPM and producing 513 hp. The engine is rigidly bolted to the carbon monocoque, transmitting all vibrations directly to the driver. Available as a targa with removable hardtop. Exactly 349 units built — one fewer than customer requests.",
           "description_zh": "法拉利50周年旗舰车型。4.7升自然吸气V12发动机直接演化自法拉利641 F1赛车，转速可达8,500 RPM，输出513马力。发动机刚性连接至碳纤维单体壳，将所有振动直接传递给驾驶者。提供带可拆卸硬顶的Targa车型。精确制造349台——比客户需求少一台。"
@@ -195,7 +195,7 @@
           "weight_kg": 1365,
           "units_produced": 400,
           "msrp_usd": 659330,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Ferrari_Enzo_Ferrari.JPG",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Enzo_Ferrari_-_Wheel_of_a_racing_car.jpg",
           "image_urls": [],
           "description_en": "Ferrari's ultimate road car at the time of launch. The 6.0-litre V12 produces 660 hp at 7,800 RPM, paired to a 6-speed F1-style paddle-shift gearbox changing in 150 milliseconds. Aerodynamics generate downforce at speed without a rear wing. Carbon-ceramic brakes were a first for a production Ferrari. 399 units were built for customers, plus one for the Pope.",
           "description_zh": "法拉利发布时的终极公路车。6.0升V12在7,800 RPM时输出660马力，搭配换挡时间仅150毫秒的6速F1风格拨片换挡变速箱。空气动力学在高速行驶时无需尾翼即可产生下压力。碳陶瓷刹车是量产法拉利的首次应用。为客户制造了399台，另加一台赠予教皇。"
@@ -216,7 +216,7 @@
           "weight_kg": 1155,
           "units_produced": 29,
           "msrp_usd": 1800000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ferrari_FXX.JPG",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Orange_Enzo_Ferrari_%287191948164%29.jpg/960px-Orange_Enzo_Ferrari_%287191948164%29.jpg",
           "image_urls": [],
           "description_en": "Track-only evolution of the Enzo, part of Ferrari's XX Programme. The V12 was enlarged to 6.3 litres and tuned to 800 hp. Carbon fibre bodywork, revised aerodynamics with a massive rear diffuser, and Brembo carbon-ceramic brakes. Ferrari retains all FXX cars and transports them to exclusive track events for owners. Not road-legal and cannot be kept at home.",
           "description_zh": "Enzo的仅限赛道进化版，是法拉利XX项目的一部分。V12扩大至6.3升，调校至800马力。碳纤维车身、改进的空气动力学配备巨大后扩散器，以及布雷博碳陶瓷刹车。法拉利保留所有FXX车辆，并将其运至专属赛道活动供车主使用。不可上路，不能存放在家中。"
@@ -248,7 +248,7 @@
           "weight_kg": 1255,
           "units_produced": 499,
           "msrp_usd": 1420000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/2015_Ferrari_LaFerrari.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ferrari_LaFerrari_at_the_Ferrari_museum.jpg/960px-Ferrari_LaFerrari_at_the_Ferrari_museum.jpg",
           "image_urls": [],
           "description_en": "Ferrari's first hybrid hypercar. The 6.3-litre V12 produces 800 hp at 9,250 RPM and is supplemented by a 163 hp HY-KERS electric motor for a combined 963 hp. The electric motor fills in low-end torque and adds performance in corners, never recharging from the mains — only through regenerative braking and the V12. Carbon fibre monocoque, pushrod suspension, and F1-style active aerodynamics. 499 units sold exclusively to invited Ferrari clients.",
           "description_zh": "法拉利首款混合动力超跑。6.3升V12在9,250 RPM时输出800马力，辅以163马力的HY-KERS电动机，综合输出963马力。电动机填补低转速扭矩并在弯道中提升性能，从不通过外接电源充电——仅通过制动能量回收和V12充电。碳纤维单体壳、推杆悬架和F1风格主动空气动力学。499台仅向受邀的法拉利客户出售。"
@@ -269,7 +269,7 @@
           "weight_kg": 1270,
           "units_produced": 210,
           "msrp_usd": 2200000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Ferrari_LaFerrari_Aperta.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ferrari_LaFerrari_Aperta_%2852164873434%29.jpg/960px-Ferrari_LaFerrari_Aperta_%2852164873434%29.jpg",
           "image_urls": [],
           "description_en": "Open-top version of LaFerrari unveiled at the 2016 Paris Motor Show, commemorating Ferrari's 70th anniversary. Same 963 hp hybrid powertrain with a removable soft-top or hard-top panel. Structural reinforcements compensate for the absent roof. 200 units sold to clients plus 10 auctioned for charity. One charity example fetched $7 million at auction.",
           "description_zh": "LaFerrari的敞篷版，于2016年巴黎车展揭幕，纪念法拉利成立70周年。搭载同款963马力混合动力系统，配备可拆卸软顶或硬顶盖板。结构加固弥补了去掉车顶的刚性损失。200台售予客户，另有10台通过慈善拍卖。一台慈善拍卖版成交价达700万美元。"
@@ -290,7 +290,7 @@
           "weight_kg": 1165,
           "units_produced": 32,
           "msrp_usd": 2700000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/2015_Ferrari_FXX-K_RED.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Ferrari_FXX_K_Evo_-_Flickr_-_Alexandre_Prevot.jpg/960px-Ferrari_FXX_K_Evo_-_Flickr_-_Alexandre_Prevot.jpg",
           "image_urls": [],
           "description_en": "Track-only evolution of LaFerrari in the XX Programme tradition. Combined output boosted to 1,050 hp through revised hybrid system calibration and enhanced V12 tune. Massive aerodynamic package with active elements generates over 540 kg of downforce. Like the FXX, cars are stored and maintained by Ferrari and brought to exclusive track events. 32 units built.",
           "description_zh": "LaFerrari的仅限赛道进化版，延续XX项目传统。通过修订混合动力系统标定和增强V12调校，综合输出提升至1,050马力。配备主动元件的大型空气动力学套件产生超过540公斤下压力。与FXX一样，车辆由法拉利存储和维护，并运至专属赛道活动。制造32台。"
@@ -322,7 +322,7 @@
           "weight_kg": 1570,
           "units_produced": null,
           "msrp_usd": 507000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/2019_Ferrari_SF90_Stradale.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2023_Ferrari_SF90_2.jpg/960px-2023_Ferrari_SF90_2.jpg",
           "image_urls": [],
           "description_en": "Ferrari's first series production plug-in hybrid. The 4.0-litre twin-turbo V8 produces 780 hp, complemented by three electric motors (one on the crankshaft, two on the front axle) adding 220 hp for a combined 1,000 hp. Features an eAWD system via the front motors and a 7.9 kWh battery for 25 km of electric-only range. 8-speed dual-clutch gearbox.",
           "description_zh": "法拉利首款量产插电式混合动力车。4.0升双涡轮增压V8输出780马力，辅以三台电动机（一台在曲轴上，两台在前轴）增加220马力，综合输出1,000马力。通过前置电动机实现eAWD系统，配备7.9千瓦时电池可纯电行驶25公里。8速双离合变速箱。"
@@ -343,7 +343,7 @@
           "weight_kg": 1620,
           "units_produced": null,
           "msrp_usd": 577000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Ferrari_SF90_Spider_%2852576066276%29.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/2023_Ferrari_SF90_Spider.jpg/960px-2023_Ferrari_SF90_Spider.jpg",
           "image_urls": [],
           "description_en": "Open-top version of the SF90 Stradale with a retractable hard top (RHT) that opens or closes in 14 seconds. Same 1,000 hp hybrid powertrain. The electric retractable hard top is stored in a compartment behind the seats, adding 50 kg over the coupe. Retains full performance figures of the Stradale.",
           "description_zh": "SF90 Stradale的敞篷版，配备可在14秒内开关的可伸缩硬顶（RHT）。搭载同款1,000马力混合动力系统。电动可伸缩硬顶存放在座椅后方的储物舱内，比硬顶版重50公斤。保留了Stradale的全部性能数据。"
@@ -364,7 +364,7 @@
           "weight_kg": 1485,
           "units_produced": 799,
           "msrp_usd": 790000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Ferrari_SF90_Stradale_%282023%29_%2852864606180%29.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/2022_Ferrari_SF90_Spider.jpg/960px-2022_Ferrari_SF90_Spider.jpg",
           "image_urls": [],
           "description_en": "Track-focused XX-programme evolution of the SF90. Power increased to 1,030 hp with revised hybrid system and engine tune. Weight reduced by 85 kg through extensive use of carbon fibre and titanium components. Aggressive aerodynamic package with a large carbon rear wing generates 400 kg of downforce at 250 km/h. Limited to 799 units globally.",
           "description_zh": "SF90的赛道取向XX项目进化版。通过修订混合动力系统和发动机调校，功率提升至1,030马力。通过大量使用碳纤维和钛合金部件减重85公斤。激进的空气动力学套件配备大型碳纤维尾翼，在250 km/h时产生400公斤下压力。全球限量799台。"
@@ -396,7 +396,7 @@
           "weight_kg": 1485,
           "units_produced": 599,
           "msrp_usd": 2250000,
-          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Ferrari_Daytona_SP3_%2852576084316%29.jpg",
+          "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Ferrari_Daytona_SP3.png/960px-Ferrari_Daytona_SP3.png",
           "image_urls": [],
           "description_en": "Third Icona model celebrating Ferrari's 1967 Daytona victory. The 6.5-litre V12 produces 840 hp at 9,250 RPM — the most powerful non-hybrid Ferrari road car engine ever. Carbon fibre targa body with butterfly doors, derived from the LaFerrari platform. 599 units at $2.25M each.",
           "description_zh": "第三款Icona车型，纪念法拉利1967年代托纳大捷。6.5升V12在9,250 RPM时输出840马力——法拉利有史以来最强大的非混动公路车发动机。碳纤维Targa车身配蝴蝶门，基于LaFerrari平台。599台，每台225万美元。"
