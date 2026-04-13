@@ -31,36 +31,61 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-background text-foreground`}
+        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
+        style={{ background: "#000000", color: "#ffffff" }}
       >
-        <nav className="fixed top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-md">
+        {/* Navigation — floating in darkness, transparent */}
+        <nav
+          className="fixed top-0 z-50 w-full"
+          style={{ background: "transparent" }}
+        >
           <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-            <Link href="/" className="text-xl font-bold tracking-tight">
-              超跑百科
-            </Link>
+            {/* Left — nav links */}
             <div className="flex items-center gap-8">
-              <Link
-                href="/brands"
-                className="text-sm text-muted hover:text-foreground transition-colors"
-              >
+              <Link href="/brands" className="nav-link">
                 Brands
               </Link>
-              <Link
-                href="/compare"
-                className="text-sm text-muted hover:text-foreground transition-colors"
-              >
+              <Link href="/compare" className="nav-link">
                 Compare
               </Link>
+            </div>
+
+            {/* Center — wordmark */}
+            <Link
+              href="/"
+              style={{
+                position: "absolute",
+                left: "50%",
+                transform: "translateX(-50%)",
+                color: "#ffffff",
+                fontSize: "13px",
+                fontWeight: 400,
+                letterSpacing: "3px",
+                textTransform: "uppercase",
+                textDecoration: "none",
+              }}
+            >
+              超跑百科
+            </Link>
+
+            {/* Right — search */}
+            <div className="flex items-center">
               <Link
                 href="/search"
-                className="text-sm text-muted hover:text-foreground transition-colors"
+                className="nav-link"
+                style={{ display: "flex", alignItems: "center", gap: "6px" }}
               >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="m21 21-4.35-4.35" />
+                </svg>
                 Search
               </Link>
             </div>
           </div>
         </nav>
-        <main className="pt-16">{children}</main>
+
+        <main>{children}</main>
       </body>
     </html>
   );
