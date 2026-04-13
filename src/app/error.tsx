@@ -10,23 +10,48 @@ export default function ErrorPage({
   reset: () => void;
 }) {
   return (
-    <div className="flex min-h-[60vh] flex-col items-center justify-center px-6 text-center">
-      <h1 className="text-3xl font-bold">Something went wrong</h1>
-      <p className="mt-2 text-muted">
+    <div
+      style={{
+        background: "#000000",
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "40px",
+        textAlign: "center",
+      }}
+    >
+      {/* Gold accent line */}
+      <div style={{ width: "40px", height: "2px", background: "#FFC000", marginBottom: "32px" }} />
+
+      <h1
+        style={{
+          fontSize: "clamp(24px, 4vw, 54px)",
+          fontWeight: 400,
+          textTransform: "uppercase",
+          color: "#ffffff",
+          margin: "0 0 16px",
+          letterSpacing: "-0.5px",
+        }}
+      >
+        Something Went Wrong
+      </h1>
+
+      <p style={{ fontSize: "14px", color: "#7d7d7d", marginBottom: "40px" }}>
         An unexpected error occurred. Please try again.
       </p>
-      <div className="mt-6 flex gap-4">
+
+      <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center" }}>
         <button
           onClick={reset}
-          className="rounded-full border border-border px-5 py-2 text-sm hover:bg-card"
+          className="btn-gold"
+          style={{ cursor: "pointer" }}
         >
-          Try again
+          Try Again
         </button>
-        <Link
-          href="/"
-          className="rounded-full border border-border px-5 py-2 text-sm hover:bg-card"
-        >
-          Go home
+        <Link href="/" className="btn-ghost">
+          Go Home
         </Link>
       </div>
     </div>

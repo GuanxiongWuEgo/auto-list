@@ -42,79 +42,173 @@ export default function SearchPage() {
   }
 
   return (
-    <div className="mx-auto max-w-4xl px-6 py-12">
-      <h1 className="text-3xl font-bold tracking-tight">Search</h1>
-      <p className="mt-1 text-sm text-muted">
-        Find any supercar by name, series, or specs
-      </p>
+    <div style={{ background: "#000000", minHeight: "100vh" }}>
 
-      <div className="mt-6">
-        <input
-          type="text"
-          value={query}
-          onChange={(e) => handleSearch(e.target.value)}
-          maxLength={200}
-          placeholder="Search cars... e.g. Zonda, Huayra, V12"
-          className="w-full rounded-xl border border-border bg-card px-4 py-3 text-foreground placeholder:text-muted/50 focus:border-accent/50 focus:outline-none"
-        />
+      {/* Page header */}
+      <div style={{ paddingTop: "120px", paddingBottom: "56px", paddingLeft: "40px", paddingRight: "40px", borderBottom: "1px solid #202020" }}>
+        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+          <p style={{ fontSize: "11px", letterSpacing: "3px", textTransform: "uppercase", color: "#7d7d7d", marginBottom: "16px" }}>
+            Encyclopedia
+          </p>
+          <h1 className="display-section" style={{ color: "#ffffff", margin: "0 0 24px" }}>
+            Search
+          </h1>
+
+          {/* Search input */}
+          <div style={{ position: "relative" }}>
+            {/* Search icon */}
+            <svg
+              style={{ position: "absolute", left: "20px", top: "50%", transform: "translateY(-50%)", opacity: 0.4 }}
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              strokeWidth="1.5"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
+            <input
+              type="text"
+              value={query}
+              onChange={(e) => handleSearch(e.target.value)}
+              maxLength={200}
+              placeholder="Search cars... e.g. Zonda, Huayra, V12"
+              style={{
+                width: "100%",
+                background: "#181818",
+                color: "#ffffff",
+                border: "none",
+                borderBottom: "1px solid #FFC000",
+                borderRadius: 0,
+                padding: "20px 20px 20px 56px",
+                fontSize: "16px",
+                outline: "none",
+                boxSizing: "border-box",
+              }}
+            />
+          </div>
+          <p style={{ fontSize: "11px", color: "#494949", letterSpacing: "0.5px", marginTop: "10px" }}>
+            Find any supercar by name, series, or specs
+          </p>
+        </div>
       </div>
 
       {/* Results */}
-      {results.length > 0 && (
-        <div className="mt-8 space-y-3">
-          {results.map((car) => (
-            <Link
-              key={car.slug}
-              href={`/brands/${car.slug.split("-")[0]}/${car.slug}`}
-              className="group flex items-center gap-4 rounded-xl border border-border bg-card p-4 transition-colors hover:border-accent/50"
-            >
-              {car.cover_image_url ? (
-                <div className="h-16 w-24 flex-shrink-0 overflow-hidden rounded-lg bg-background">
-                  <img
-                    src={car.cover_image_url}
-                    alt={car.name_en}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-              ) : (
-                <div className="flex h-16 w-24 flex-shrink-0 items-center justify-center rounded-lg bg-background">
-                  <span className="text-lg font-bold text-border">
-                    {car.name_en.charAt(0)}
-                  </span>
-                </div>
-              )}
-              <div>
-                <h3 className="font-semibold group-hover:text-accent transition-colors">
-                  {car.name_en}
-                </h3>
-                {car.name_zh && car.name_zh !== car.name_en && (
-                  <p className="text-sm text-muted">{car.name_zh}</p>
+      <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 40px 80px" }}>
+        {results.length > 0 && (
+          <div style={{ marginTop: "32px", display: "flex", flexDirection: "column", gap: "2px" }}>
+            {results.map((car) => (
+              <Link
+                key={car.slug}
+                href={`/brands/${car.slug.split("-")[0]}/${car.slug}`}
+                style={{
+                  textDecoration: "none",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0",
+                  background: "#181818",
+                  transition: "background 0.2s",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = "#202020")}
+                onMouseLeave={(e) => (e.currentTarget.style.background = "#181818")}
+              >
+                {/* Thumbnail */}
+                {car.cover_image_url ? (
+                  <div style={{ width: "120px", height: "80px", flexShrink: 0, overflow: "hidden" }}>
+                    <img
+                      src={car.cover_image_url}
+                      alt={car.name_en}
+                      style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                    />
+                  </div>
+                ) : (
+                  <div
+                    style={{
+                      width: "120px",
+                      height: "80px",
+                      flexShrink: 0,
+                      background: "#202020",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <span style={{ fontSize: "24px", fontWeight: 400, color: "#494949", textTransform: "uppercase" }}>
+                      {car.name_en.charAt(0)}
+                    </span>
+                  </div>
                 )}
-                <div className="mt-1 flex gap-3 text-xs text-muted">
-                  {car.year && <span>{car.year}</span>}
-                  {car.max_power_hp && <span>{car.max_power_hp} hp</span>}
-                  {car.top_speed_kmh && <span>{car.top_speed_kmh} km/h</span>}
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      )}
 
-      {/* Empty state */}
-      {searched && results.length === 0 && (
-        <div className="mt-16 text-center">
-          <p className="text-muted">
-            No results for &ldquo;{query}&rdquo;
-          </p>
-          <p className="mt-2 text-sm text-muted">
-            Try a different search or{" "}
-            <Link href="/brands" className="text-accent hover:underline">
-              browse brands
-            </Link>
-          </p>
-        </div>
-      )}
+                {/* Info */}
+                <div style={{ padding: "16px 24px", flex: 1 }}>
+                  <h3
+                    style={{
+                      fontSize: "14px",
+                      fontWeight: 400,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.5px",
+                      color: "#ffffff",
+                      margin: "0 0 4px",
+                    }}
+                  >
+                    {car.name_en}
+                  </h3>
+                  {car.name_zh && car.name_zh !== car.name_en && (
+                    <p style={{ fontSize: "11px", color: "#7d7d7d", margin: "0 0 8px" }}>{car.name_zh}</p>
+                  )}
+                  <div style={{ display: "flex", gap: "12px", fontSize: "11px", color: "#7d7d7d", letterSpacing: "0.3px" }}>
+                    {car.year && <span>{car.year}</span>}
+                    {car.max_power_hp && (
+                      <span style={{ color: "#FFC000" }}>{car.max_power_hp} HP</span>
+                    )}
+                    {car.top_speed_kmh && <span>{car.top_speed_kmh} KM/H</span>}
+                  </div>
+                </div>
+
+                {/* Arrow */}
+                <div style={{ padding: "0 20px", flexShrink: 0, opacity: 0.3 }}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5">
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                </div>
+              </Link>
+            ))}
+          </div>
+        )}
+
+        {/* Empty state */}
+        {searched && results.length === 0 && (
+          <div style={{ paddingTop: "80px", textAlign: "center" }}>
+            <p style={{ fontSize: "13px", color: "#494949", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "8px" }}>
+              No results for &ldquo;{query}&rdquo;
+            </p>
+            <p style={{ fontSize: "12px", color: "#494949" }}>
+              Try a different search or{" "}
+              <Link href="/brands" style={{ color: "#FFC000", textDecoration: "none" }}>
+                browse brands
+              </Link>
+            </p>
+          </div>
+        )}
+
+        {/* Placeholder when empty */}
+        {!searched && (
+          <div style={{ paddingTop: "60px", textAlign: "center" }}>
+            <p style={{ fontSize: "12px", color: "#313131", textTransform: "uppercase", letterSpacing: "2px" }}>
+              Type to search 100+ supercar variants
+            </p>
+          </div>
+        )}
+      </div>
+
+      {/* Footer */}
+      <footer style={{ background: "#181818", borderTop: "1px solid #202020", padding: "40px", textAlign: "center" }}>
+        <p style={{ fontSize: "11px", color: "#494949", letterSpacing: "1px", textTransform: "uppercase" }}>
+          超跑百科 — Supercar Wiki
+        </p>
+      </footer>
     </div>
   );
 }

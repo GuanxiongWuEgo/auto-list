@@ -41,11 +41,7 @@ const specRows: { key: string; label: string; suffix?: string; prefix?: string }
   { key: "msrp_usd", label: "MSRP", prefix: "$" },
 ];
 
-function formatValue(
-  value: unknown,
-  prefix?: string,
-  suffix?: string
-): string {
+function formatValue(value: unknown, prefix?: string, suffix?: string): string {
   if (value == null) return "—";
   if (typeof value === "number" && prefix === "$")
     return `${prefix}${value.toLocaleString()}`;
@@ -106,119 +102,265 @@ function CompareContent() {
     router.push(`/compare?${params.toString()}`);
   }
 
-  // Same car guard
   if (isSameCar) {
     return (
-      <div className="mx-auto max-w-3xl px-6 py-20 text-center">
-        <h1 className="text-3xl font-bold">Pick a different car</h1>
-        <p className="mt-2 text-muted">
-          You&apos;re comparing the same car to itself. Select a different car
-          for one of the slots.
-        </p>
-        <Link
-          href="/compare"
-          className="mt-6 inline-block rounded-full border border-border px-5 py-2 text-sm hover:bg-card"
+      <div
+        style={{
+          minHeight: "60vh",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "40px",
+          textAlign: "center",
+        }}
+      >
+        <h1
+          style={{
+            fontSize: "40px",
+            fontWeight: 400,
+            textTransform: "uppercase",
+            color: "#ffffff",
+            margin: "0 0 16px",
+          }}
         >
-          Start over
+          Pick a Different Car
+        </h1>
+        <p style={{ fontSize: "14px", color: "#7d7d7d", marginBottom: "32px" }}>
+          You&apos;re comparing the same car to itself.
+        </p>
+        <Link href="/compare" className="btn-ghost">
+          Start Over
         </Link>
       </div>
     );
   }
 
-  // Selector UI
   const showSelector = !slugA || !slugB || errorA || errorB;
 
   return (
-    <div className="mx-auto max-w-6xl px-6 py-12">
-      <h1 className="text-3xl font-bold tracking-tight">Compare</h1>
-      <p className="mt-1 text-sm text-muted">
-        Pick any two cars for a side-by-side spec comparison
-      </p>
-
-      {/* Selectors */}
-      {showSelector && (
-        <div className="mt-8 grid gap-6 sm:grid-cols-2">
-          {(["a", "b"] as const).map((side) => {
-            const current = side === "a" ? slugA : slugB;
-            const hasError = side === "a" ? errorA : errorB;
-            return (
-              <div key={side} className="rounded-xl border border-border bg-card p-4">
-                <label className="block text-sm font-medium text-muted mb-2">
-                  Car {side.toUpperCase()}
-                </label>
-                {hasError && (
-                  <p className="mb-2 text-sm text-red-400">
-                    Car not found. Try searching or pick from the list.
-                  </p>
-                )}
-                <select
-                  className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm text-foreground"
-                  value={current ?? ""}
-                  onChange={(e) => selectCar(side, e.target.value)}
-                >
-                  <option value="">Select a car...</option>
-                  {allCars.map((c) => (
-                    <option key={c.slug} value={c.slug}>
-                      {c.name_en} {c.year ? `(${c.year})` : ""}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            );
-          })}
+    <div style={{ background: "#000000", minHeight: "100vh" }}>
+      {/* Page header */}
+      <div style={{ paddingTop: "120px", paddingBottom: "40px", paddingLeft: "40px", paddingRight: "40px", borderBottom: "1px solid #202020" }}>
+        <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
+          <p style={{ fontSize: "11px", letterSpacing: "3px", textTransform: "uppercase", color: "#7d7d7d", marginBottom: "12px" }}>
+            Side-by-Side
+          </p>
+          <h1 className="display-section" style={{ color: "#ffffff", margin: 0 }}>
+            Compare
+          </h1>
+          <p style={{ fontSize: "14px", color: "#7d7d7d", marginTop: "12px" }}>
+            Pick any two cars for a side-by-side spec comparison
+          </p>
         </div>
-      )}
+      </div>
 
-      {/* Comparison table */}
-      {carA && carB && (
-        <div className="mt-10 overflow-hidden rounded-xl border border-border">
-          {/* Header */}
-          <div className="grid grid-cols-3 border-b border-border bg-card">
-            <div className="px-4 py-3 text-sm font-medium text-muted">Spec</div>
-            <div className="px-4 py-3 text-center">
-              <Link
-                href={`/brands/${carA.slug.split("-")[0]}/${carA.slug}`}
-                className="font-semibold hover:text-accent transition-colors"
-              >
-                {carA.name_en}
-              </Link>
-              {carA.year && (
-                <p className="text-xs text-muted">{carA.year}</p>
-              )}
+      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 40px 80px" }}>
+
+        {/* Selectors */}
+        {showSelector && (
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+              gap: "2px",
+              marginTop: "40px",
+            }}
+          >
+            {(["a", "b"] as const).map((side) => {
+              const current = side === "a" ? slugA : slugB;
+              const hasError = side === "a" ? errorA : errorB;
+              return (
+                <div key={side} style={{ background: "#181818", padding: "28px" }}>
+                  <label
+                    style={{
+                      display: "block",
+                      fontSize: "11px",
+                      fontWeight: 400,
+                      letterSpacing: "2px",
+                      textTransform: "uppercase",
+                      color: "#7d7d7d",
+                      marginBottom: "16px",
+                    }}
+                  >
+                    Car {side.toUpperCase()}
+                  </label>
+                  {hasError && (
+                    <p style={{ fontSize: "12px", color: "#FFC000", marginBottom: "12px" }}>
+                      Car not found. Try searching or pick from the list.
+                    </p>
+                  )}
+                  <select
+                    style={{
+                      width: "100%",
+                      background: "#000000",
+                      color: "#ffffff",
+                      border: "1px solid #202020",
+                      borderRadius: 0,
+                      padding: "12px 16px",
+                      fontSize: "13px",
+                      appearance: "none",
+                      cursor: "pointer",
+                    }}
+                    value={current ?? ""}
+                    onChange={(e) => selectCar(side, e.target.value)}
+                  >
+                    <option value="">Select a car...</option>
+                    {allCars.map((c) => (
+                      <option key={c.slug} value={c.slug}>
+                        {c.name_en} {c.year ? `(${c.year})` : ""}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {/* Comparison table */}
+        {carA && carB && (
+          <div style={{ marginTop: "40px" }}>
+            {/* Header row with car covers */}
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "2px", marginBottom: "2px" }}>
+              {/* Spec label column header */}
+              <div style={{ background: "#0d0d0d", padding: "20px", display: "flex", alignItems: "flex-end" }}>
+                <span style={{ fontSize: "11px", letterSpacing: "2px", textTransform: "uppercase", color: "#494949" }}>
+                  Spec
+                </span>
+              </div>
+
+              {/* Car A header */}
+              <div style={{ background: "#181818" }}>
+                {carA.cover_image_url && (
+                  <div style={{ aspectRatio: "16/9", overflow: "hidden" }}>
+                    <img src={carA.cover_image_url} alt={carA.name_en} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  </div>
+                )}
+                <div style={{ padding: "16px 20px" }}>
+                  <Link
+                    href={`/brands/${carA.slug.split("-")[0]}/${carA.slug}`}
+                    style={{ fontSize: "14px", fontWeight: 400, textTransform: "uppercase", letterSpacing: "0.5px", color: "#ffffff", textDecoration: "none" }}
+                  >
+                    {carA.name_en}
+                  </Link>
+                  {carA.year && (
+                    <p style={{ fontSize: "11px", color: "#7d7d7d", margin: "4px 0 0" }}>{carA.year}</p>
+                  )}
+                </div>
+              </div>
+
+              {/* Car B header */}
+              <div style={{ background: "#181818" }}>
+                {carB.cover_image_url && (
+                  <div style={{ aspectRatio: "16/9", overflow: "hidden" }}>
+                    <img src={carB.cover_image_url} alt={carB.name_en} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  </div>
+                )}
+                <div style={{ padding: "16px 20px" }}>
+                  <Link
+                    href={`/brands/${carB.slug.split("-")[0]}/${carB.slug}`}
+                    style={{ fontSize: "14px", fontWeight: 400, textTransform: "uppercase", letterSpacing: "0.5px", color: "#ffffff", textDecoration: "none" }}
+                  >
+                    {carB.name_en}
+                  </Link>
+                  {carB.year && (
+                    <p style={{ fontSize: "11px", color: "#7d7d7d", margin: "4px 0 0" }}>{carB.year}</p>
+                  )}
+                </div>
+              </div>
             </div>
-            <div className="px-4 py-3 text-center">
-              <Link
-                href={`/brands/${carB.slug.split("-")[0]}/${carB.slug}`}
-                className="font-semibold hover:text-accent transition-colors"
+
+            {/* Spec rows */}
+            {specRows.map(({ key, label, suffix, prefix }, idx) => {
+              const valA = (carA as any)[key];
+              const valB = (carB as any)[key];
+              const isHigher = (a: unknown, b: unknown) =>
+                typeof a === "number" && typeof b === "number" ? a > b : false;
+              const aWins = isHigher(valA, valB);
+              const bWins = isHigher(valB, valA);
+
+              return (
+                <div
+                  key={key}
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "1fr 1fr 1fr",
+                    gap: "2px",
+                    marginBottom: "2px",
+                  }}
+                >
+                  {/* Label */}
+                  <div
+                    style={{
+                      background: "#0d0d0d",
+                      padding: "14px 20px",
+                      fontSize: "12px",
+                      color: "#7d7d7d",
+                      textTransform: "uppercase",
+                      letterSpacing: "0.5px",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    {label}
+                  </div>
+                  {/* A value */}
+                  <div
+                    style={{
+                      background: "#181818",
+                      padding: "14px 20px",
+                      fontSize: "14px",
+                      fontWeight: 400,
+                      color: aWins ? "#FFC000" : "#ffffff",
+                      textAlign: "center",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    {formatValue(valA, prefix, suffix)}
+                  </div>
+                  {/* B value */}
+                  <div
+                    style={{
+                      background: "#181818",
+                      padding: "14px 20px",
+                      fontSize: "14px",
+                      fontWeight: 400,
+                      color: bWins ? "#FFC000" : "#ffffff",
+                      textAlign: "center",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    {formatValue(valB, prefix, suffix)}
+                  </div>
+                </div>
+              );
+            })}
+
+            {/* Change selection */}
+            <div style={{ marginTop: "32px" }}>
+              <button
+                onClick={() => router.push("/compare")}
+                className="btn-ghost"
+                style={{ cursor: "pointer" }}
               >
-                {carB.name_en}
-              </Link>
-              {carB.year && (
-                <p className="text-xs text-muted">{carB.year}</p>
-              )}
+                Change Selection
+              </button>
             </div>
           </div>
-          {/* Rows */}
-          {specRows.map(({ key, label, suffix, prefix }) => {
-            const valA = (carA as any)[key];
-            const valB = (carB as any)[key];
-            return (
-              <div
-                key={key}
-                className="grid grid-cols-3 border-b border-border last:border-0 text-sm"
-              >
-                <div className="px-4 py-3 text-muted">{label}</div>
-                <div className="px-4 py-3 text-center font-medium">
-                  {formatValue(valA, prefix, suffix)}
-                </div>
-                <div className="px-4 py-3 text-center font-medium">
-                  {formatValue(valB, prefix, suffix)}
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      )}
+        )}
+      </div>
+
+      {/* Footer */}
+      <footer style={{ background: "#181818", borderTop: "1px solid #202020", padding: "40px", textAlign: "center" }}>
+        <p style={{ fontSize: "11px", color: "#494949", letterSpacing: "1px", textTransform: "uppercase" }}>
+          超跑百科 — Supercar Wiki
+        </p>
+      </footer>
     </div>
   );
 }
