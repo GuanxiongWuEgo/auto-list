@@ -37,7 +37,11 @@ export default function RootLayout({
         {/* Navigation — floating in darkness, transparent */}
         <nav
           className="fixed top-0 z-50 w-full"
-          style={{ background: "transparent" }}
+          style={{
+            background: "rgba(0, 0, 0, 0.6)",
+            backdropFilter: "blur(12px)",
+            WebkitBackdropFilter: "blur(12px)",
+          }}
         >
           <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
             {/* Left — nav links */}
